@@ -18,17 +18,14 @@
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
-      "styles": [
-        "styles.css",
-        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
-        "../node_modules/admin-lte/dist/css/AdminLTE.min.css",
-        "../node_modules/admin-lte/dist/css/skins/skin-blue.min.css",
-        "../node_modules/font-awesome/css/font-awesome.min.css"
-      ],
+      "styles": ["assets/css/font-awesome.min.css",
+                 "assets/css/simple-line-icons.css",
+                 "scss/style.scss"
+                 ],
       "scripts": [
-                  "../node_modules/bootstrap/dist/js/bootstrap.min.js",
-                  "../node_modules/jquery/dist/jquery.min.js",
-                  "../node_modules/admin-lte/dist/js/adminlte.min.js"],
+        "../node_modules/chart.js/dist/Chart.bundle.min.js",
+        "../node_modules/chart.js/dist/Chart.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
