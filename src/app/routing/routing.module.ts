@@ -16,7 +16,14 @@ export const routes:Routes = [
   {
     path:'dashboard',component:DashboardComponent,
     children:[
-      {path:'',loadChildren:'../component/home/home.module#HomeModule'}
+      {
+        path:'',
+        loadChildren:'../component/home/home.module#HomeModule'
+      },
+      {
+        path:'categoryMenu',
+        loadChildren:'../component/category-menu/category-menu.module#CategoryMenuModule'
+      }
   ]},
   {
       path:'**',component:NoUrlComponent
