@@ -8,7 +8,7 @@ export class MenuCategoryService {
 
   constructor(private _httpClient:HttpClient) { }
 
-  public prueba(name:string){
+  public save(name:string){
 
     const params = new URLSearchParams();
     params.set('name',name);
@@ -17,6 +17,10 @@ export class MenuCategoryService {
     
    return this._httpClient.post(URL+"/menuCategory",
     params.toString(),{headers: headers})
+  }
+
+  public findAllActive(){
+    return this._httpClient.get(URL+"/menuCategory");
   }
 
 }

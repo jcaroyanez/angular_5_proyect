@@ -5,13 +5,15 @@ import { CategoryMenuAddComponent } from './category-menu-add/category-menu-add.
 import { CategoryMenuRoutingModule } from './category-menu-routing.module';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule  } from '@angular/forms';
+import { DataTableModule } from '../data-table';
 
 @NgModule({
   imports: [
     CommonModule,
     CategoryMenuRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    DataTableModule
   ],
   declarations: [
     CategoryMenuAddComponent,

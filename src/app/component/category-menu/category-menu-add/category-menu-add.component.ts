@@ -51,7 +51,7 @@ export class CategoryMenuAddComponent implements OnInit {
     this.isLoader = true;
 
     this.name = this.formCategory.get('name').value;
-    this._menuCategoryService.prueba(this.name).subscribe((rest:any) => {
+    this._menuCategoryService.save(this.name).subscribe((rest:any) => {
       if(rest.tipo == 200){
         this.success = true;
         this.message = rest.message;

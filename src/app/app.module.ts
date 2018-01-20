@@ -16,8 +16,8 @@ import { HeaderComponent } from './layout/header/header.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { CategoryMenuModule } from './component/category-menu/category-menu.module';
-import{ RoutingModule } from './routing/routing.module';
-import {HttpClientModule} from '@angular/common/http';
+import { RoutingModule } from './routing/routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 import {
   AsideToggleDirective,
@@ -25,7 +25,6 @@ import {
   SIDEBAR_TOGGLE_DIRECTIVES
 } from './directives';
 import { MenuCategoryService } from './services/menu-category.service';
-
 
 const APP_DIRECTIVES = [
   AsideToggleDirective,
